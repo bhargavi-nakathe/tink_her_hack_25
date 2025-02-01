@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For the pie chart -->
+</head>
+<body>
+  <header>
+    <h1>Finance Tracker</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#expenses-adder">Expenses Adder</a>
+      <a href="#activities">Activities</a>
+      <a href="#guidance">Guidance</a>
+      <a href="#about-us">About Us</a>
+      <button id="logout">Logout</button>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Home</h2>
+    <div class="chart-container">
+      <canvas id="expenseChart"></canvas> <!-- Pie Chart -->
+    </div>
+
+    <h3>Expense Summary</h3>
+    <table id="expense-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be added dynamically -->
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <p>Total Expense: <span id="total-expense">$0</span></p>
+      <p>Savings: <span id="savings">$0</span></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
